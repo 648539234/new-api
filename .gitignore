@@ -37,3 +37,7 @@ token_estimator_test.go
 skills-lock.json
 .playwright-mcp
 .mcp.json
+
+# i18n sync reports — temporary per-language untranslated-key dumps,
+# regenerated on every `bun run i18n:sync`. Keep _sync-report.json tracked.
+web/default/src/i18n/locales/_reports/*.untranslated.json
