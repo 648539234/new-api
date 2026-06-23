@@ -111,15 +111,22 @@ export function Hero(props: HeroProps) {
             </span>
             <span>{t('AI Application Infrastructure Foundation')}</span>
           </div>
-
+          {/*原标题隐藏*/}
           <h1
-            className='landing-animate-fade-up text-[clamp(2.25rem,4.5vw,3.25rem)] leading-[1.15] font-bold tracking-tight'
+            className='landing-animate-fade-up text-[clamp(2.25rem,4.5vw,3.25rem)] leading-[1.15] font-bold tracking-tight hidden'
             style={{ animationDelay: '60ms' }}
           >
             {t('Unified API Gateway for')}
             <br />
             <span className='bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent'>
               {t('Vast Range of AI Models')}
+            </span>
+          </h1>
+          <h1
+            className='landing-animate-fade-up text-[clamp(2.25rem,4.5vw,3.25rem)] leading-[1.15] font-bold tracking-tight'
+            style={{ animationDelay: '60ms' }}>
+            <span className='bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent'>
+              {t('Unified API Gateway')}
             </span>
           </h1>
           <p
@@ -155,9 +162,10 @@ export function Hero(props: HeroProps) {
                   {t('Get Started')}
                   <ArrowRight className='ml-1.5 size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
                 </Button>
+                {/* 查看定价隐藏 */}
                 <Button
                   variant='outline'
-                  className='border-border/50 hover:border-border hover:bg-muted/50 h-11 rounded-lg px-5 text-sm font-medium'
+                  className='border-border/50 hover:border-border hover:bg-muted/50 h-11 rounded-lg px-5 text-sm font-medium hidden'
                   render={<Link to='/pricing' />}
                 >
                   {t('View Pricing')}
