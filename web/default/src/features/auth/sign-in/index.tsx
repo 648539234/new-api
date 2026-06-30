@@ -35,7 +35,7 @@ export function SignIn() {
     <AuthLayout>
       <div className='w-full space-y-8'>
         <div className='space-y-2'>
-          <div className='flex items-baseline justify-between'>
+          <div className='flex items-center justify-between'>
             <h2 className='text-2xl font-semibold tracking-tight'>
               {t('Sign in')}
             </h2>
